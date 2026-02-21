@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Exclusive Trending Stickers - Best Quality</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?familyPoppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🎨 StickerHub</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button class="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>🔥 Exclusive & Trending Stickers</h2>
+            <p>Best quality WhatsApp, Telegram & Instagram stickers jo abhi tak viral hain!</p>
+            <div class="hero-buttons">
+                <a href="#trending" class="btn-primary">Browse Stickers</a>
+                <a href="#upload" class="btn-secondary">Upload Your Sticker</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">10,000+</span>
+                    <span class="stat-label">Happy Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Stickers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9⭐</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending" id="trending">
+        <div class="section-header">
+            <h2>🚀 Trending Now</h2>
+            <p>Ye stickers abhi viral ho rahe hain - miss mat karein!</p>
+        </div>
+        <div class="sticker-grid" id="trending-stickers">
+            <!-- Stickers will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2>📂 Categories</h2>
+        </div>
+        <div class="category-grid">
+            <div class="category-card" onclick="filterStickers('funny')">
+                <div class="category-icon">😂</div>
+                <h3>Funny</h3>
+                <p>500+ Stickers</p>
+            </div>
+            <div class="category-card" onclick="filterStickers('love')">
+                <div class="category-icon">❤️</div>
+                <h3>Love</h3>
+                <p>800+ Stickers</p>
+            </div>
+            <div class="category-card" onclick="filterStickers('sad')">
+                <div class="category-icon">😢</div>
+                <h3>Sad</h3>
+                <p>300+ Stickers</p>
+            </div>
+            <div class="category-card" onclick="filterStickers('angry')">
+                <div class="category-icon">😡</div>
+                <h3>Angry</h3>
+                <p>400+ Stickers</p>
+            </div>
+            <div class="category-card" onclick="filterStickers('cute')">
+                <div class="category-icon">🥰</div>
+                <h3>Cute</h3>
+                <p>600+ Stickers</p>
+            </div>
+            <div class="category-card" onclick="filterStickers('meme')">
+                <div class="category-icon">🎭</div>
+                <h3>Meme</h3>
+                <p>700+ Stickers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Stickers Section -->
+    <section class="all-stickers">
+        <div class="section-header">
+            <h2>🎨 All Exclusive Stickers</h2>
+        </div>
+        <div class="sticker-grid" id="all-stickers">
+            <!-- All stickers loaded here -->
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section" id="upload">
+        <div class="section-header">
+            <h2>📤 Upload Your Sticker</h2>
+            <p>Apna exclusive sticker upload karein aur paise kamaayein!</p>
+        </div>
+        <div class="upload-form">
+            <div class="upload-area" id="upload-area">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & drop yahan sticker</p>
+                <p>ya</p>
+                <button class="btn-upload" onclick="document.getElementById('sticker-input').click()">Browse Files</button>
+                <input type="file" id="sticker-input" accept="image/*" hidden>
+            </div>
